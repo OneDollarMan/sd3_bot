@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    container_name: telegram_bot
+    volumes:
+      - .:/app
+    environment:
+      - TELEGRAM_BOT_TOKEN=7401468178:AAHPoUYiP29dBxzogG6dKjda1XyBSZdTpZk
+      - PSQL_URL=postgresql+asyncpg://sd_user:Fdiopj324r8lkqH@192.168.1.39:5432/sd
+      - RABBITMQ_URL=amqp://sd_user:Lfjds0fhj290dFjoq@192.168.1.39/
+      - REQUEST_JOB_NAME=generate_image
+      - IMAGE_QUEUE_NAME=image_queue
+    command: python main.py

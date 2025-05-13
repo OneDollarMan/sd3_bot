@@ -1,0 +1,8 @@
+aiohttp
+asyncio~=3.4.3
+asyncpg
+psycopg[binary,pool]
+pydantic~=2.9.2
+pyTelegramBotAPI~=4.23.0
+SQLAlchemy~=2.0.35
+aio_pika~=9.4.3

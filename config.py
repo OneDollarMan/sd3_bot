@@ -1,0 +1,7 @@
+import os
+
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+PSQL_URL = os.getenv('PSQL_URL')
+RABBITMQ_URL = os.getenv('RABBITMQ_URL')
+REQUEST_JOB_NAME = os.getenv("REQUEST_JOB_NAME")
+IMAGE_QUEUE_NAME = os.getenv('IMAGE_QUEUE_NAME')
